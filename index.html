@@ -1,6 +1,4 @@
-<?php
-$id = $_GET['user_id'];
- ?>
+
 <html>
 <head>
 
@@ -10,11 +8,15 @@ $id = $_GET['user_id'];
 
 <script type="text/javascript">
     VK.init(function() {
-
+        VK.api(users.get,function(data) {
+            if (data.response) {
+                document.write(data);
+            }
+        });
 
     });
 </script>
-hello, <?php echo $id ?>!
+
 </body>
 </html>
 
