@@ -20,9 +20,7 @@
             VK.api("friends.get", {fields: "photo_medium"}, function(data) {
                 // Действия с полученными данными
                 for(c=0;c<data.response.length;c++){
-                    $("body").append("<img src='"+data.response[c].photo_medium+"'>
-
-                    ");
+                    $("body").append("<img src='"+data.response[c].photo_medium+"'>");
                 }
             });
         }
