@@ -8,9 +8,9 @@
 
 <script type="text/javascript">
     VK.init(function() {
-        document.write("test");
         VK.api(users.get,function(data) {
 
+            document.write("test");
             if (data.response) {
                 document.write(data.response.id);
 
