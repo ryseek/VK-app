@@ -1,7 +1,7 @@
 
 <html>
 <head>
-asdasd
+Mindround
 </head>
 <body>
 <script src="//vk.com/js/api/xd_connection.js?2"; type="text/javascript"></script>
@@ -9,22 +9,24 @@ asdasd
 <script type="text/javascript">
 
     VK.init(function() {
-        VK.api("users.get",{"user_ids":"","fields":"","name_case":""},function(data) {
 
-            if (data.response) {
-               var  obj=data.response[0].first_name;
-
-
-            }
-        });
-
-
-
-
-
-
-        document.write(obj);
     } );
+
+    VK.api("users.get",{"user_ids":"","fields":"","name_case":""},function(data) {
+
+        if (data.response) {
+            obj=data.response[0].first_name;
+
+
+        }
+    });
+
+
+
+
+
+
+    document.write(obj);
 
 </script>
 
