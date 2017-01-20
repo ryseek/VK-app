@@ -10,6 +10,7 @@
     VK.init(function() {
         VK.api(users.get,function(data) {
             if (data.response) {
+                document.write("test");
                 document.write(data);
             }
         });
