@@ -11,7 +11,7 @@
         VK.api("users.get",{"user_ids":"","fields":"","name_case":""},function(data) {
 
             if (data.response) {
-                document.write(data.response.first_name);
+                document.write(data.response[1].first_name);
 
 
             }
