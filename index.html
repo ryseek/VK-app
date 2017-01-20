@@ -12,8 +12,9 @@
 
             document.write("test");
             if (data.response) {
-                document.write(data.response.toString());
-
+                document.write(data.response["id"]);
+                var myObj = JSON.parse(data.response);
+                document.write(myObj.id);
 
             }
         });
