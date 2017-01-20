@@ -11,14 +11,22 @@
         VK.api("users.get",{"user_ids":"","fields":"","name_case":""},function(data) {
 
             if (data.response) {
-              document.write("Your id:");
-              var user_id=data.response[0].uid;
-              document.write(user_id);
+                user_id = data.response[0].uid;
             }
         });
 
     } );
 
+
+</script>
+
+
+
+
+<script type="text/javascript">
+
+    document.write("Your id:");
+    document.write(user_id);
 
 </script>
 </body>
