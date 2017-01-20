@@ -1,3 +1,6 @@
+<?php
+$id = $_GET['user_id'];
+ ?>
 <html>
 <head>
 
@@ -7,10 +10,11 @@
 
 <script type="text/javascript">
     VK.init(function() {
-        VK.callMethod("showSettingsBox", 8214);
+
+
     });
 </script>
-
+hello, <?php echo $id ?>!
 </body>
 </html>
 
