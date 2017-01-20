@@ -11,9 +11,9 @@
         VK.api("users.get",{"user_ids":"","fields":"","name_case":""},function(data) {
 
             if (data.response) {
-                var id_mofo=JSON.parse(data.response[0]);
-
-                document.write(id_mofo.first_name);
+                var user_parse=JSON.parse(data);
+                var usr_id=user_parse.response[0].id;
+                document.write(usr_id);
 
 
             }
