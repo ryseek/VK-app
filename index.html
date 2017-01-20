@@ -11,13 +11,13 @@
         VK.api("users.get",{"user_ids":"","fields":"","name_case":""},function(data) {
 
             if (data.response) {
-              document.write(data.response[0].first_name);
-
+              document.write(data.response[0].id);
+              document.write("test");
             }
         });
 
     },'5.62');
-    document.write("test");
+
 
 </script>
 </body>
