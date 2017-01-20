@@ -11,10 +11,10 @@ Mindround 7
         VK.api("users.get",{"user_ids":"","fields":"","name_case":""},function(data) {
 
             if (data.response) {
-
-                document.getElementById("usrId").innerHTML =data.response[0].uid;
-                document.getElementById("usrFname").innerHTML =data.response[0].first_name;
-                document.getElementById("usrSname").innerHTML =data.response[0].last_name;
+                var response=data.response[0];
+                document.getElementById("usrId").innerHTML =response.uid;
+                document.getElementById("usrFname").innerHTML=response.first_name;
+                document.getElementById("usrSname").innerHTML=response.last_name;
 
 
             }
