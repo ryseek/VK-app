@@ -35,6 +35,23 @@
     //Вызываем функцию регулировки высоты каждые пол секунды.
     setInterval('autosize(607)', 500);
     });
+    function doIt(){
+        /*
+         VK.api('метод', {параметр: "значение"}, callback функция{
+         // работаем с полученными данными
+         });
+         */
+
+        VK.api("friends.get", {fields: "photo_medium"}, function(data) {
+            // Действия с полученными данными
+            for(c=0;c<data.response.length;c++){
+                $("body").append("<img src='"+data.response[c].photo_medium+"'>");
+            }
+        });
+    }
+    $(document).ready(function(){
+        doIt();
+    });
     </script>
 
 
@@ -46,7 +63,7 @@
 
 
 
-hello 
+hello
 
 
 </body>
