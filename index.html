@@ -8,13 +8,12 @@
 
 <script type="text/javascript">
 
-    var obj;
     VK.init(function() {
         VK.api("users.get",{"user_ids":"","fields":"","name_case":""},function(data) {
 
             if (data.response) {
                 obj=data.response[0].first_name;
-                obj="sdfds";
+
 
             }
         });
@@ -26,7 +25,7 @@
 
         document.write(obj);
     } );
-    
+
 </script>
 
 
