@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 Mindround 7
@@ -6,28 +7,28 @@ Mindround 7
 <script src="//vk.com/js/api/xd_connection.js?2"; type="text/javascript"></script>
 
 <script type="text/javascript">
-    var n=" ";
     VK.init(function() {
         VK.api("users.get",{"user_ids":"","fields":"","name_case":""},function(data) {
 
             if (data.response) {
 
                 document.getElementById("usrId").innerHTML =data.response[0].uid;
+                document.getElementById("usrFname").innerHTML =data.response[0].first_name;
+                document.getElementById("usrSname").innerHTML =data.response[0].last_name;
+
+
             }
         });
+
+
+
+
 
     } );
 
 
-
-
-
-
-
 </script>
-
-
-<p id="usrId"></p>
+<p>Hi, <p id="usrFname"></p> <p id="usrSname"></p>!</p>
 
 </body>
 </html>
