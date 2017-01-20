@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script type="text/javascript">
-        VK.init(function() {
-            VK.api("users.get",{"user_ids":"","fields":"","name_case":""},function(data) {
-
-                if (data.response) {
-                    var response=data.response[0];
-                 
-                    document.getElementById("usrFname").innerHTML=response.first_name;
-                    document.getElementById("usrSname").innerHTML=response.last_name;
-
-
-                }
-            });
-
-
-
-
-
-        } );
-
-
-    </script>
-
-    Mindround 7
+Mindround 7
 </head>
 <body>
 <script src="//vk.com/js/api/xd_connection.js?2"; type="text/javascript"></script>
 
+<script type="text/javascript">
+    VK.init(function() {
+        VK.api("users.get",{"user_ids":"","fields":"","name_case":""},function(data) {
 
-<p> Hi, <z id="usrFname"></z> <z id="usrSname"></z>!</p>
+            if (data.response) {
+                var response=data.response[0];
+                document.getElementById("usrId").innerHTML =response.uid;
+                document.getElementById("usrFname").innerHTML=response.first_name;
+                document.getElementById("usrSname").innerHTML=response.last_name;
+
+
+            }
+        });
+
+
+
+
+
+    } );
+
+
+</script>
+
+<p> Hi, <z id="usrId"></z> <z id="usrSname"></z>!</p>
 
 </body>
 </html>
