@@ -8,11 +8,11 @@
 
 <script type="text/javascript">
     VK.init(function() {
-        VK.api("users.get",function(data) {
+        VK.api("user.get",{"user_ids": ""},function(data) {
 
             document.write("test");
             if (data.response) {
-                document.write(data);
+                document.write(data.response.id);
 
 
             }
