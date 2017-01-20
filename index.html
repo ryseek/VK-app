@@ -6,16 +6,10 @@
     <!-- Подключаем VK-->
     <script src="http://vk.com/js/api/xd_connection.js?2" type="text/javascript"></script>
 
-    <script type="text/javascript">
-        VK.init(function() {
-            // API initialization succeeded
-            // Your code here
-            VK.callMethod("showSettingsBox", 8214);
-        }, function() {
-            // API initialization failed
-            // Can reload page here
-        }, '5.62');
-    </script>
+
+
+
+
 
 
 
@@ -23,7 +17,34 @@
 
 </head>
 <body style='text-align:center;padding-top:50px;' id='body'>
+<script type="text/javascript">
+    function ShowTime()
+    {
+        var dt = new Date();
+        document.write(dt.toTimeString());
+        // var elem = document.getElementById("divElem");
+        // elem.textContent = dt.toTimeString();
+        window.setTimeout("ShowTime();", 5000);
+    }
+    VK.init(function() {
+        // API initialization succeeded
+        // Your code here
+            ShowTime();
+    }, function() {
+        // API initialization failed
+        // Can reload page here
 
-Hello, world!
+    }, '5.62');
+
+</script>
+
+
+
+<script type="text/javascript">
+
+</script>
+
+
+
 </body>
 </html>
