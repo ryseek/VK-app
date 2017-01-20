@@ -1,14 +1,29 @@
-<!DOCTYPE html>
 <html>
 <head>
-<!-- Подключаем jquery -->
-<script src='http://code.jquery.com/jquery-1.7.1.js'></script>
-<!-- Подключаем VK-->
-<script src="http://vk.com/js/api/xd_connection.js?2" type="text/javascript"></script>
-
-
+    <script src="vkontakte.ru/js/api/openapi.js" type="text/javascript"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
-<body style='text-align:center;padding-top:50px;' id='body'>
-    Hello, world!
+<body>
+<script language="javascript">
+    window.onload = (function() {
+        VK.init({
+            apiId: 2046606 //id подключенного сайта
+        });
+        function authInfo(response)
+        {
+            if (response.session)
+            {
+                document.getElementById('t').innerHTML = "Your ID: " + response.session.mid;
+            }
+            else
+            {
+                document.getElementById('t').innerHTML = 'Вы не авторизованы вконтакте.';
+            }
+        }
+        VK.Auth.getLoginStatus(authInfo);
+    });
+</script>
+<div id='t'></div>
+
 </body>
 </html>
