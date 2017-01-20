@@ -11,7 +11,8 @@
         VK.api("users.get",{"user_ids":"","fields":"","name_case":""},function(data) {
 
             if (data.response) {
-                document.write(data.response[0].id);
+
+                user_id=data.response[0].id;
 
 
             }
@@ -19,6 +20,17 @@
 
     },'5.62');
 </script>
+
+
+
+<script type="text/javascript">
+
+    document.write(user_id);
+</script>
+
+
+
+
 
 </body>
 </html>
