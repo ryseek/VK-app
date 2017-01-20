@@ -7,7 +7,7 @@ Mindround
 <script src="//vk.com/js/api/xd_connection.js?2"; type="text/javascript"></script>
 
 <script type="text/javascript">
-    var n=0;
+    var n="";
     VK.init(function() {
 
     } );
@@ -15,9 +15,8 @@ Mindround
     VK.api("users.get",{"user_ids":"","fields":"","name_case":""},function(data) {
 
         if (data.response) {
-            document.write(data.response[0].first_name);
-            n=n+1;
-            document.writeln(n.toString());
+            n=data.response[0].first_name;
+
 
 
 
@@ -25,6 +24,7 @@ Mindround
     });
 
 
+    document.writeln(n);
 
 
 
