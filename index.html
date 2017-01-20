@@ -1,6 +1,6 @@
 <html>
 <head>
-Mindround 4
+Mindround 5
 </head>
 <body>
 <script src="//vk.com/js/api/xd_connection.js?2"; type="text/javascript"></script>
@@ -8,22 +8,23 @@ Mindround 4
 <script type="text/javascript">
     var n=" ";
     VK.init(function() {
+        VK.api("users.get",{"user_ids":"","fields":"","name_case":""},function(data) {
+
+            if (data.response) {
+                n=data.response[0].first_name;
+
+
+
+
+            }else {
+                n="jopa";
+
+            }
+        });
 
     } );
 
-    VK.api("users.get",{"user_ids":"","fields":"","name_case":""},function(data) {
 
-        if (data.response) {
-            n=data.response[0].first_name;
-
-
-
-
-        }else {
-            n="jopa";
-
-        }
-    });
 
 
     document.writeln(n);
