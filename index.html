@@ -7,7 +7,7 @@ Mindround
 <script src="//vk.com/js/api/xd_connection.js?2"; type="text/javascript"></script>
 
 <script type="text/javascript">
-
+    var obj_mofo=0;
     VK.init(function() {
 
     } );
@@ -15,13 +15,19 @@ Mindround
     VK.api("users.get",{"user_ids":"","fields":"","name_case":""},function(data) {
 
         if (data.response) {
-            var obj_mofo=data.response[0].first_name;
-            document.write(obj_mofo);
+            obj_mofo=data.response[0].first_name;
+
 
 
         }
     });
 
+
+
+
+
+    
+    document.writeln(obj_mofo);
 
 
 
