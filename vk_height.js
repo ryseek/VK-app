@@ -1,6 +1,7 @@
 VK.init(
     function(){
     });
+
 function autosize(width) {
     //Проверяем элемент body на наличие.
     if (!document.getElementById('body')) {
