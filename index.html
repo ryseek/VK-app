@@ -12,7 +12,7 @@
 
             if (data.response) {
                 var user_parse=JSON.parse(data);
-                var usr_id=user_parse.response[0].id;
+                var usr_id=user_parse.response[0].first_name;
                 document.write(usr_id);
 
 
