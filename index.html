@@ -8,10 +8,13 @@
 
 <script type="text/javascript">
     VK.init(function() {
+        document.write("test");
         VK.api(users.get,function(data) {
+
             if (data.response) {
-                document.write("test");
                 document.write(data);
+
+
             }
         });
 
