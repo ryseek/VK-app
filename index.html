@@ -11,18 +11,18 @@
         VK.api("users.get",{"user_ids":"","fields":"","name_case":""},function(data) {
 
             if (data.response) {
-                id_mofo=data.response[0].id;
+                var id_mofo=data.response[0].id;
 
+                document.write(id_mofo);
 
 
             }
         });
 
     },'5.62');
-    document.write(id_mofo);
+
 
 </script>
-
 </body>
 </html>
 
