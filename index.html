@@ -12,7 +12,7 @@ Mindround 6
 
             if (data.response) {
 
-                document.writeln(data.response[0].first_name);
+                document.getElementById("demo").innerHTML =data.response[0].first_name;
             }
         });
 
@@ -25,6 +25,9 @@ Mindround 6
 
 
 </script>
+
+
+<p id="demo"></p>
 
 </body>
 </html>
