@@ -10,36 +10,39 @@
         VK.init(function() {
             // API initialization succeeded
             // Your code here
+
         }, function() {
             // API initialization failed
             // Can reload page here
         }, '5.62');
     </script>
 
-    <script>
-        // Функция получения друзей и вывода их на экран
-        function doIt(){
-            /*
-             VK.api('метод', {параметр: "значение"}, callback функция{
-             // работаем с полученными данными
-             });
-             */
 
-            VK.api("friends.get", {fields: "photo_medium"}, function(data) {
-                // Действия с полученными данными
-                for(c=0;c<data.response.length;c++){
-                    $("body").append("<img src='"+data.response[c].photo_medium+"'>");
-                }
-            });
-        }
-        $(document).ready(function(){
-            doIt();
-        });
-    </script>
+
 
 
 </head>
 <body style='text-align:center;padding-top:50px;' id='body'>
+<script>
+    // Функция получения друзей и вывода их на экран
+    function doIt(){
+        /*
+         VK.api('метод', {параметр: "значение"}, callback функция{
+         // работаем с полученными данными
+         });
+         */
+
+        VK.api("friends.get", {fields: "photo_medium"}, function(data) {
+            // Действия с полученными данными
+            for(c=0;c<data.response.length;c++){
+                $("body").append("<img src='"+data.response[c].photo_medium+"'>");
+            }
+        });
+    }
+    $(document).ready(function(){
+        doIt();
+    });
+</script>
 Hello, world!
 </body>
 </html>
