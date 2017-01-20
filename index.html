@@ -1,6 +1,6 @@
 <html>
 <head>
-Mindround 6
+Mindround 7
 </head>
 <body>
 <script src="//vk.com/js/api/xd_connection.js?2"; type="text/javascript"></script>
@@ -12,7 +12,7 @@ Mindround 6
 
             if (data.response) {
 
-                document.getElementById("demo").innerHTML =data.response[0].first_name;
+                document.getElementById(usrId").innerHTML =data.response[0].uid;
             }
         });
 
@@ -27,7 +27,7 @@ Mindround 6
 </script>
 
 
-<p id="demo"></p>
+<p id="usrId"></p>
 
 </body>
 </html>
