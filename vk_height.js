@@ -9,7 +9,7 @@ VK.api("users.get",{"user_ids":"","fields":"","name_case":""},function(data) {
         fname=responsevk.first_name;
         surname=responsevk.sur_name;
 
-        document.getElementById("firstname").innerHTML=JSON.stringify(responsevk);
+        document.getElementById("firstname").innerHTML=JSON.stringify(responsevk),null,100;
     }
 });
 
