@@ -1,33 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-Mindround 10
+    <script type="text/javascript" src="vk_height.js" ></script>
+    <script src="//vk.com/js/api/xd_connection.js?2"; type="text/javascript"></script>
+
+    Mindround 10
 </head>
 <body>
-<script src="//vk.com/js/api/xd_connection.js?2"; type="text/javascript"></script>
-
-<script type="text/javascript">
-    VK.init(function() {
-
-
-    } );
-    var id, name, surname;
-
-    VK.api("users.get",{"user_ids":"","fields":"","name_case":""},function(data) {
-
-        if (data.response) {
-            var response=data.response[0];
-            id=response.uid;
-            document.getElementById("iname").innerHTML=id;
-
-
-
-        }
-    });
-
-
-
-</script>
 
 <p> Hi, <z5 id="iname"></z5>!</p>
 
