@@ -17,7 +17,7 @@ VK.api("users.get",{"user_ids":"","fields":"","name_case":""},function(data) {
         fname=response.first_name;
         surname=response.sur_name;
 
-        document.getElementById("firstname").innerHTML=id;
+        document.getElementById("firstname").innerHTML=fname;
 
     }
 });
