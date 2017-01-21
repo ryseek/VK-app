@@ -1,12 +1,12 @@
 var id, fname, surname;
-var response;
+var responsevk;
 
 VK.api("users.get",{"user_ids":"","fields":"","name_case":""},function(data) {
-
     if (data.response) {
-        response=data.response[0];
-        fname=response.first_name;
-        surname=response.sur_name;
+        responsevk=data.response[0];
+        id=responsevk.id;
+        fname=responsevk.first_name;
+        surname=responsevk.sur_name;
 
         document.getElementById("firstname").innerHTML=fname;
     }
