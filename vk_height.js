@@ -5,8 +5,10 @@ var uid, fname, surname;
 
 VK.api("users.get",{"user_ids":"","fields":"","name_case":"nom"},function(data) {
     if (data.response) {
-        var responsevk=data.response[0];
+        
 
+        var myObj = JSON.parse(data);
+        var responsevk=myObj.response[0];
 
         document.getElementById("firstname").innerHTML=responsevk.first_name;
     }
