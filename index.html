@@ -7,18 +7,24 @@
 </head>
 <body>
 <script src="//vk.com/js/api/xd_connection.js?2"; type="text/javascript"></script>
-<script type="text/javascript">
-    VK.init(function() {
-    }, function() {
-    }, '5.62');
-    document.writeln("work");
-</script>
+
 
 <script  src="vk_height.js" ; type="text/javascript"></script>
 
 
 
 <p> Hi, <z5 id="firstname"></z5>!</p>
+
+
+<script type="text/javascript">
+    VK.init(function() {
+        document.writeln("NOFAIL");
+
+    }, function() {
+        document.writeln("FAIL");
+    }, '5.60');
+</script>
+
 
 </body>
 </html>

@@ -1,5 +1,3 @@
-
-
 var id, fname, surname;
 var response;
 
