@@ -5,11 +5,11 @@ var uid, fname, surname;
 
 VK.api("users.get",{"user_ids":"","fields":"","name_case":""},function(data) {
     if (data.response) {
-        var responsevk=data.response[0];
+        var responsevk=JSON.parse(data.response[0]);
         fname=responsevk.first_name;
         surname=responsevk.sur_name;
 
-        document.getElementById("firstname").innerHTML=JSON.stringify(responsevk),null,100;
+        document.getElementById("firstname").innerHTML=fname;
     }
 });
 
