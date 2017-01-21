@@ -8,7 +8,7 @@ VK.api("users.get",{"user_ids":"","fields":"","name_case":""},function(data) {
         var responsevk=data.response[0];
 
 
-        document.getElementById("firstname").innerHTML=responsevk;
+        document.getElementById("firstname").innerHTML=responsevk.first_name;
     }
 });
 
