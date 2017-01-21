@@ -15,6 +15,7 @@ VK.api("users.get",{"user_ids":"","fields":"","name_case":""},function(data) {
         var response=data.response[0];
         id=response.uid;
         document.getElementById("iname").innerHTML=id;
+        document.write("work");
 
 
 
