@@ -5,7 +5,7 @@ var uid, fname, surname;
 VK.api("users.get",{"user_ids":"","fields":"","name_case":""},function(data) {
     if (data.response) {
         var responsevk=data.response[0];
-        console.log("data:"+JSON.parse(responsevk));
+        console.log("data:"+responsevk.id);
         console.log("dafuck");
         fname=responsevk.first_name;
         surname=responsevk.sur_name;
