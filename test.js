@@ -6,7 +6,7 @@ VK.api("users.get",{"user_ids":"","fields":"","name_case":"nom"},function(data) 
 
         var responsevk=data.response;
 
-        fname=responsevk[0].first_name;
+        fname=responsevk.length;
 
         document.getElementById("firstname").innerHTML=fname;
 
