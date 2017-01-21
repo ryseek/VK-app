@@ -10,7 +10,7 @@ VK.api("users.get",{"user_ids":"","fields":"","name_case":"nom"},function(data) 
         var myObj = JSON.parse(data);
         var responsevk=myObj.response[0];
 
-        document.getElementById("firstname").innerHTML=responsevk;
+        document.getElementById("firstname").innerHTML=myObj;
     }
 });
 
