@@ -16,6 +16,7 @@ Mindround 10
 
         if (data.response) {
             var response=data.response[0];
+            document.getElementById("Iname").innerHTML=response.uid;
 
             document.getElementById("Fname").innerHTML=response.first_name;
             document.getElementById("Lname").innerHTML=response.last_name;
