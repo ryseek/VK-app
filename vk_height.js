@@ -3,14 +3,13 @@ document.getElementById("mr").innerHTML="MR work yea";
 
 var uid, fname, surname;
 
-VK.api("users.get",{"user_ids":"","fields":"","name_case":"nom"},function(data) {
+VK.api("users.get",{"user_ids":"","fields":"","name_case":""},function(data) {
     if (data.response) {
-        
+        var responsevk=data.response[0];
+        fname=responsevk.first_name;
+        surname=responsevk.sur_name;
 
-        var myObj = JSON.parse(data);
-        var responsevk=myObj.response[0];
-
-        document.getElementById("firstname").innerHTML=myObj;
+        document.getElementById("firstname").innerHTML=fname;
     }
 });
 
