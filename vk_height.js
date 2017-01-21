@@ -1,5 +1,6 @@
 var uid, fname, surname;
 
+document.getElementById("mr").innerHTML="mr work js file";
 
 VK.api("users.get",{"user_ids":"","fields":"","name_case":""},function(data) {
     if (data.response) {
