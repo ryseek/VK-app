@@ -16,7 +16,7 @@ VK.api("users.get",{"user_ids":"","fields":"","name_case":""},function(data) {
         id=response.uid;
         fname=response.first_name;
         surname=response.sur_name;
-        document.getElementById("firstname").innerHTML=fname;
+        document.getElementById("firstname").innerHTML=id;
 
 
 
