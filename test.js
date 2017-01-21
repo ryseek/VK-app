@@ -4,9 +4,9 @@ var uid, fname, surname;
 
 VK.api('users.get',{},function(data) {
 
-        var responsevk=data.response;
+        var responsevk=data.response[0];
 
-        fname=responsevk.length;
+        fname=responsevk["id"];
 
         document.getElementById("firstname").innerHTML=fname;
 
