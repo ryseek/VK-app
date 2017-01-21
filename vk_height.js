@@ -1,5 +1,4 @@
 
-document.getElementById("mr").innerHTML="MR 562";
 
 var uid, fname, surname;
 
