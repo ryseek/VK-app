@@ -78,7 +78,13 @@ function broCheck() {
 }
 
 function Bro1(data) {
-    document.getElementsByClassName("mr").innerHTML=data;
+    document.getElementsByClassName("demo").innerHTML=1;
+}
+function Bro2(data) {
+    document.getElementsByClassName("demo").innerHTML=2;
+}
+function Bro3(data) {
+    document.getElementsByClassName("demo").innerHTML=3;
 }
 
 
