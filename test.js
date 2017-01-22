@@ -16,7 +16,7 @@ VK.api('users.get',{},function(data) {
 });
 
 
-VK.api('friends.get',{order:"hints",fields:"domain",name_case:"nom"},function(data) {
+VK.api('friends.get',{},function(data) {
 
     var responsevk=data.response;
 
