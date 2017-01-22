@@ -24,11 +24,8 @@ VK.api('friends.get',{order:"hints",fields:"domain"},function(data) {
     var responsevk=data.response;
 
     countget=responsevk.length;
-    var bestfr=responsevk[0].first_name;
-
 
     document.getElementById("counts").innerHTML=countget;
-    document.getElementById("best").innerHTML=bestfr;
 
 
     var friends = responsevk;
