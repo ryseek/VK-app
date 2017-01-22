@@ -77,14 +77,16 @@ function broCheck() {
     document.getElementById("demo").innerHTML = "Hello World";
 }
 
-function Bro1() {
-    document.getElementsByClassName("demo").innerHTML=1;
+function Bro1(data) {
+    var bro1 = data.options[data.selectedIndex].text;
+    document.getElementById("demo").innerHTML = bro1;
+
 }
-function Bro2() {
-    document.getElementsByClassName("demo").innerHTML=2;
+function Bro2(data) {
+    document.getElementById("demo").innerHTML = "Hello World";
 }
-function Bro3() {
-    document.getElementsByClassName("demo").innerHTML=3;
+function Bro3(data) {
+    document.getElementById("demo").innerHTML = "Hello World";
 }
 
 

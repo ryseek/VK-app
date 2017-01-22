@@ -19,24 +19,25 @@
 <p> Tell us your top 3 smartest MIPT students you know</p>
 
 <p> 1#:
-    <select id="FriendsList1", onChange="Bro1()">
+    <select id="FriendsList1" onclick="Bro1(this)">
     </select>
 </p>
 
 <p> 2#:
-    <select id="FriendsList2", onChange="Bro2(this.selectedIndex)">
+    <select id="FriendsList2" onChange="Bro2(this);">
     </select>
 </p>
 
 
 <p> 3#:
-    <select id="FriendsList3", onChange="Bro3(this.selectedIndex)">
+    <select id="FriendsList3" onChange="Bro3(this);">
     </select>
 </p>
 
 
 
-<button onclick="broCheck()">Done</button>
+<button onclick="broCheck();">Done</button>
+
 <p id="demo"></p>
 
 <script src="//vk.com/js/api/xd_connection.js?2"; type="text/javascript"></script>
