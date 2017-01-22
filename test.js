@@ -9,7 +9,7 @@ VK.api('users.get',{},function(data) {
 
         var responsevk=data.response[0];
 
-        fname=responsevk.id;
+        fname=responsevk.first_name;
 
         document.getElementById("firstname").innerHTML=fname;
 
@@ -21,7 +21,7 @@ VK.api('friends.get',{},function(data) {
 
     var responsevk=data.response;
 
-    countget=responsevk;
+    countget=responsevk.length;
 
     document.getElementById("counts").innerHTML=countget;
 
