@@ -22,7 +22,7 @@ VK.api('friends.get',{order:"hints"},function(data) {
     var responsevk=data.response;
 
     countget=responsevk.length;
-    var bestfr=responsevk[0].first_name;
+    var bestfr=responsevk;
 
     document.getElementById("counts").innerHTML=countget;
     document.getElementById("best").innerHTML=bestfr;
