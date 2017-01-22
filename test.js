@@ -28,7 +28,7 @@ VK.api('friends.get',{order:"hints",fields:"domain"},function(data) {
     document.getElementById("counts").innerHTML=countget;
 
 
-    var friends = responsevk;
+    var friends = responsevk;11
     //
     var sel = document.getElementById('FriendsList1');
     var fragment = document.createDocumentFragment();
@@ -75,6 +75,10 @@ VK.api('friends.get',{order:"hints",fields:"domain"},function(data) {
 
 function broCheck() {
     document.getElementById("demo").innerHTML = "Hello World";
+}
+
+function Bro1(data) {
+    document.getElementsByClassName("mr").innerHTML=data;
 }
 
 
