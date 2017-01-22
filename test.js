@@ -21,7 +21,7 @@ VK.api('friends.get',{},function(data) {
 
     var responsevk=data.response;
 
-    countget=responsevk.items.length;
+    countget=responsevk;
 
     document.getElementById("counts").innerHTML=countget;
 
