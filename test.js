@@ -77,13 +77,13 @@ function broCheck() {
     document.getElementById("demo").innerHTML = "Hello World";
 }
 
-function Bro1(data) {
+function Bro1() {
     document.getElementsByClassName("demo").innerHTML=1;
 }
-function Bro2(data) {
+function Bro2() {
     document.getElementsByClassName("demo").innerHTML=2;
 }
-function Bro3(data) {
+function Bro3() {
     document.getElementsByClassName("demo").innerHTML=3;
 }
 
