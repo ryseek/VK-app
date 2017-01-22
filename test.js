@@ -35,7 +35,7 @@ VK.api('friends.get',{order:"hints",fields:"domain"},function(data) {
 
     friends.forEach(function(bro, index) {
         var opt = document.createElement('option');
-        opt.innerHTML = bro.id+" "+bro.last_name;
+        opt.innerHTML = bro.uid+" "+bro.last_name;
         opt.value = bro.first_name+" "+bro.last_name;
         fragment.appendChild(opt);
     });
