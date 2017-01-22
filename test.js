@@ -32,8 +32,8 @@ VK.api('friends.get',{order:"hints",fields:"domain"},function(data) {
 
 
     var friends = responsevk;
-
-    var sel = document.getElementById('FriendsList');
+    //
+    var sel = document.getElementById('FriendsList1');
     var fragment = document.createDocumentFragment();
 
     friends.forEach(function(bro, index) {
@@ -44,6 +44,32 @@ VK.api('friends.get',{order:"hints",fields:"domain"},function(data) {
     });
 
     sel.appendChild(fragment);
+    //
+    var sel = document.getElementById('FriendsList2');
+    var fragment = document.createDocumentFragment();
+
+    friends.forEach(function(bro, index) {
+        var opt = document.createElement('option');
+        opt.innerHTML = bro.first_name+" "+bro.last_name;
+        opt.value = bro.first_name+" "+bro.last_name;
+        fragment.appendChild(opt);
+    });
+
+    sel.appendChild(fragment);
+    //
+    var sel = document.getElementById('FriendsList3');
+    var fragment = document.createDocumentFragment();
+
+    friends.forEach(function(bro, index) {
+        var opt = document.createElement('option');
+        opt.innerHTML = bro.first_name+" "+bro.last_name;
+        opt.value = bro.first_name+" "+bro.last_name;
+        fragment.appendChild(opt);
+    });
+
+    sel.appendChild(fragment);
+
+
 
 
 });
