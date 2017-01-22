@@ -19,7 +19,7 @@ VK.api('users.get',{},function(data) {
 
 
 
-VK.api('friends.get',{order:"hints",fields:"domain"},function(data) {
+VK.api('friends.get',{order:"random",fields:"domain"},function(data) {
 
     var responsevk=data.response;
 
