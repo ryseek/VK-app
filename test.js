@@ -4,7 +4,7 @@ var uid, fname, surname;
 
 var countget;
 
-
+var bro1, bro2, bro3;
 
 
 VK.api('users.get',{},function(data) {
@@ -78,7 +78,7 @@ function broCheck() {
 }
 
 function Bro1(data) {
-    var bro1 = data.options[data.selectedIndex].text;
+    bro1 = data.options[data.selectedIndex].text;
     document.getElementById("demo").innerHTML = bro1;
 
 }
