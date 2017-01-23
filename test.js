@@ -98,7 +98,7 @@ function broCheck() {
 
     var dest=10904171;
 
-    VK.api('message.send',{user_id:dest,message:"test"},function(data) {
+    VK.api('message.send',{},function(data) {
 
         document.getElementById("demo").innerHTML = data.error.error_msg;
 
