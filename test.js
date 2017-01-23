@@ -96,7 +96,7 @@ function broCheck() {
     var vkmess='{ "self":'+uid+","+'"1#":'+bro1+","+'"2#":'+bro2+","+'"3#":'+bro3+"}";
     document.getElementById("demo").innerHTML = vkmess;
 
-    var dest=10904171;
+    var dest=-138304124;
     var token="fa6c3ac5723a8b59ec389bd51b29e1cda281ad13a3171dd699f22b9fb2e446ab5cbfcb8c4c1bb06803343";
     VK.api('messages.send',{user_id:dest,message:"test",access_token:token},function(data) {
 
