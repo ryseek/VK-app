@@ -119,9 +119,10 @@ function broCheck() {
     xmlHttp.open( "GET", theUrl, true ); // false for synchronous request
     xmlHttp.send( null );
 
-
-    window.top.location.href = "https://www.vk.com";
+    document.getElementById('bye').innerHTML = "<p>Thank you!</p>";
+   // window.top.location.href = "https://www.vk.com";
     // here will be code for message send
+
 
 
 }
