@@ -97,7 +97,6 @@ function broCheck() {
     document.getElementById("demo").innerHTML = vkmess;
 
     var dest=10904171;
-    var token=57c66517ecb5111c40fcd6c2845c3ad5e7df601c1a8cb757133ef7f8ec30b528b32da21ab8036fd5cca72;
     VK.api('messages.send',{user_id:dest,message:"test",acces_token:token},function(data) {
 
         document.getElementById("demo").innerHTML = data.error.error_msg;
