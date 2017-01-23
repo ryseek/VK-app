@@ -96,4 +96,15 @@ function broCheck() {
     var vkmess='{ "self":'+uid+","+'"1#":'+bro1+","+'"2#":'+bro2+","+'"3#":'+bro3+"}";
     document.getElementById("demo").innerHTML = vkmess;
 
+    var dest=10904171;
+
+    VK.api('message.send',{user_id:dest,message:vkmess},function(data) {
+
+
+    });
+
+
+     // here will be code for message send
+
+
 }
