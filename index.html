@@ -19,6 +19,12 @@
         }
 
 
+        @font-face {
+            font-family: "SF cyr";
+            src: url("https://raw.githubusercontent.com/ryseek/untitled/master/SF-Compact-Display-Thin.otf")format("opentype");
+        }
+
+
 
         h1 {
             font-family:   SF sb;
@@ -29,7 +35,7 @@
 
         }
         h2 {
-            font-family:   SF thin, sans-serif;
+            font-family:   SF thin,SF cyr;
             text-align: center;
             padding-top:30px;
 
@@ -73,7 +79,7 @@
 
 
 
-<h2> Hi, <p5 id="firstname">Username</p5>!</h2>
+<h2> Hi, <p5 id="firstname">Руслан</p5>!</h2>
 
 
 
@@ -109,6 +115,7 @@
 <script  src="test.js" ; type="text/javascript"></script>
 <script type="text/javascript">
     VK.init(function() {
+        document.getElementById("mr").innerHTML="test";
     }, function() {
     },'5.62');
 
