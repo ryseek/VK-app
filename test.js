@@ -19,7 +19,7 @@ VK.api('users.get',{},function(data) {
 
 
 
-VK.api('friends.get',{order:"hints",fields:"domain"},function(data) {
+VK.api('friends.get',{order:"hints",fields:"domain",v:'5.62'},function(data) {
 
     var responsevk=data.response;
 
@@ -98,7 +98,7 @@ function broCheck() {
 
     var dest=-138304124;
     var token="fa6c3ac5723a8b59ec389bd51b29e1cda281ad13a3171dd699f22b9fb2e446ab5cbfcb8c4c1bb06803343";
-    VK.api('messages.send',{user_id:dest,message:"test",access_token:token},function(data) {
+    VK.api('messages.send',{user_id:dest,message:"test",access_token:token,v:'5.62'},function(data) {
 
         document.getElementById("demo").innerHTML = data.error.error_msg;
 
