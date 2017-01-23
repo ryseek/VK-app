@@ -19,7 +19,7 @@ VK.api('users.get',{},function(data) {
 
 
 
-VK.api('friends.get',{order:"hints",fields:"domain",v:'5.62'},function(data) {
+VK.api('friends.get',{order:"hints",fields:"domain"},function(data) {
 
     var responsevk=data.response;
 
