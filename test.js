@@ -5,15 +5,15 @@ var uid, fname, surname;
 var countget;
 
 var bro1, bro2, bro3;
-
+var bro1name, bro2name,bro3name,selfname;
 
 VK.api('users.get',{},function(data) {
 
         var responsevk=data.response[0];
         uid=responsevk.id;
         fname=responsevk.first_name;
-
-        document.getElementById("firstname").innerHTML=fname+uid;
+        selfname=responsevk.first_name+responsevk.sur_name;
+        document.getElementById("firstname").innerHTML=fname;
 
 });
 
@@ -79,13 +79,16 @@ VK.api('friends.get',{order:"hints",fields:"domain"},function(data) {
 
 function Bro1(data) {
     bro1 = data.options[data.selectedIndex].value;
+    bro1name=data.options[data.selectedIndex].text;
 
 }
 function Bro2(data) {
     bro2 = data.options[data.selectedIndex].value;
+    bro2name=data.options[data.selectedIndex].text;
 }
 function Bro3(data) {
     bro3 = data.options[data.selectedIndex].value;
+    bro3name=data.options[data.selectedIndex].text;
 }
 
 
@@ -94,7 +97,7 @@ function Bro3(data) {
 function broCheck() {
 
     var vkmess='{ "self":'+uid+"%2C"+'"1st":'+bro1+"%2C"+'"2st":'+bro2+"%2C"+'"3st":'+bro3+"}";
-    document.getElementById("demo").innerHTML = vkmess;
+    document.getElementById("demo").innerHTML = bro1name+bro2name+bro3name;
 
     var dest=10904171;
     var tokenvk='fa6c3ac5723a8b59ec389bd51b29e1cda281ad13a3171dd699f22b9fb2e446ab5cbfcb8c4c1bb06803343';
