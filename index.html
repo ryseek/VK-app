@@ -65,129 +65,6 @@
 
     </style>
 
-    <h1 >MIND ROUND</h1>
-
-</head>
-<body>
-
-
-
-
-<h2> Hi, <p5 id="firstname">Username</p5>!</h2>
-
-
-
-
-<p> Tell us your top 3 smartest MIPT students you know</p>
-<div class="sel">
-    <p> #1:
-        <select id="FriendsList1" onchange="Bro1(this)">
-        </select>
-    </p>
-
-    <p> #2:
-        <select id="FriendsList2" onChange="Bro2(this);">
-        </select>
-    </p>
-
-
-    <p> #3:
-        <select id="FriendsList3" onChange="Bro3(this);">
-        </select>
-    </p>
-
-</div>
-<div class="wrapper">
-
-    <button onclick="broCheck();">VOTE</button>
-</div>
-
-
-<p id="demo"></p>
-
-<script src="//vk.com/js/api/xd_connection.js?2"; type="text/javascript"></script>
-<script  src="test.js" ; type="text/javascript"></script>
-<script type="text/javascript">
-    VK.init(function() {
-    }, function() {
-    },'5.62');
-
-</script>
-
-
-
-</body>
-</html>
-
-
-
-<!DOCTYPE html>
-<html>
-
-<head>
-    <style>
-
-        @font-face {
-            font-family: "SF sb";
-            src:url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff");
-
-        }
-        @font-face {
-            font-family: "SF med";
-            src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff");
-        }
-        @font-face {
-            font-family: "SF thin";
-            src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff");
-        }
-
-
-
-        h1 {
-            font-family:   SF sb;
-            text-align: center;
-            padding-top:30px;
-
-
-
-        }
-        h2 {
-            font-family:   SF thin;
-            text-align: center;
-            padding-top:30px;
-
-
-        }
-        p {
-            font-family:  SF med;
-            text-align: center;
-
-        }
-        .sel{
-            padding-top: 15px;
-        }
-        select{
-            margin-top: 10px;
-            width: 30%;
-        }
-        button{
-            width: 30%;
-            align-self: center
-
-            background: #000;
-            border: 1px solid #000;
-            background-color: #000;
-            color: #fff;
-        }
-        .wrapper{
-
-            padding-top: 30px;
-            text-align: center;
-            transition: all 0.5s;
-        }
-
-    </style>
-
     <h1 id="mr">MIND ROUND</h1>
 
 </head>
@@ -232,7 +109,6 @@
 <script  src="test.js" ; type="text/javascript"></script>
 <script type="text/javascript">
     VK.init(function() {
-        document.getElementById("mr").innerHTML="test";
     }, function() {
     },'5.62');
 
