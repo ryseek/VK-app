@@ -12,7 +12,7 @@ VK.api('users.get',{},function(data) {
         var responsevk=data.response[0];
         uid=responsevk.id;
         fname=responsevk.first_name;
-        selfname=responsevk.first_name+responsevk.sur_name;
+        selfname=responsevk.first_name+" "+responsevk.sur_name;
         document.getElementById("firstname").innerHTML=fname;
 
 });
@@ -32,6 +32,11 @@ VK.api('friends.get',{order:"hints",fields:"domain"},function(data) {
     bro1=responsevk[0].uid;
     bro2=responsevk[0].uid;
     bro3=responsevk[0].uid;
+
+    bro1name=responsevk[0].first_name+" "+responsevk[0].sur_name;
+
+    bro2name=bro1name;
+    bro3name=bro2name;
 
     //
     var sel = document.getElementById('FriendsList1');
@@ -96,8 +101,8 @@ function Bro3(data) {
 
 function broCheck() {
 
-    var vkmess='{ "self":'+uid+"%2C"+'"1st":'+bro1+"%2C"+'"2st":'+bro2+"%2C"+'"3st":'+bro3+"}";
-    document.getElementById("demo").innerHTML = bro1name+":"+bro2name+":"+bro3name;
+    var vkmess='{ "self":'+uid+"%2C"+'"1st":'+bro1+"%2C"+'"2st":'+bro2+"%2C"+'"3st":'+bro3+"}+{"+selfname+":"+bro1name+":"+bro2name+":"+bro3name+"}";
+    //document.getElementById("demo").innerHTML = selfname+":"+bro1name+":"+bro2name+":"+bro3name;
 
     var dest=10904171;
     var tokenvk='fa6c3ac5723a8b59ec389bd51b29e1cda281ad13a3171dd699f22b9fb2e446ab5cbfcb8c4c1bb06803343';
