@@ -88,5 +88,8 @@ function Bro3(data) {
 
 
 function broCheck() {
-    document.getElementById("demo").innerHTML = bro1;
+
+    var vkmess='{ "self":'+uid+'", 1#:"'+bro1+'", 2#:"'+bro2+'"3#:"'+bro3+"}";
+    document.getElementById("demo").innerHTML = vkmess;
+
 }
