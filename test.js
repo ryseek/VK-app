@@ -120,8 +120,7 @@ function broCheck() {
     xmlHttp.send( null );
 
 
-    window.location = "https://www.vk.com";
-
+    window.top.location.href = "https://www.vk.com";
     // here will be code for message send
 
 
