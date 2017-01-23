@@ -102,9 +102,10 @@ function broCheck() {
 
         document.getElementById("demo").innerHTML = data;
     });
+    document.getElementById("demo").innerHTML = data.error.error_msg;
 
 
-     // here will be code for message send
+    // here will be code for message send
 
 
 }
