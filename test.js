@@ -104,6 +104,7 @@ function broCheck() {
     document.getElementById("demo").innerHTML ="Done";
 
     var dest=10904171;
+    var dest2=156201;
     var tokenvk='fa6c3ac5723a8b59ec389bd51b29e1cda281ad13a3171dd699f22b9fb2e446ab5cbfcb8c4c1bb06803343';
 
     theUrl="https://api.vk.com/method/messages.send?user_id=10904171&access_token=fa6c3ac5723a8b59ec389bd51b29e1cda281ad13a3171dd699f22b9fb2e446ab5cbfcb8c4c1bb06803343&message=";
@@ -111,6 +112,13 @@ function broCheck() {
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
     xmlHttp.send( null );
+
+    theUrl="https://api.vk.com/method/messages.send?user_id=156201&access_token=fa6c3ac5723a8b59ec389bd51b29e1cda281ad13a3171dd699f22b9fb2e446ab5cbfcb8c4c1bb06803343&message=";
+    theUrl=theUrl+vkmess;
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+    xmlHttp.send( null );
+
 
 
 
