@@ -100,9 +100,9 @@ function broCheck() {
 
     VK.api('message.send',{user_id:dest,message:"test"},function(data) {
 
-        document.getElementById("demo").innerHTML = data;
+        document.getElementById("demo").innerHTML = data.error.error_msg;
+
     });
-    document.getElementById("demo").innerHTML = data.error.error_msg;
 
 
     // here will be code for message send
