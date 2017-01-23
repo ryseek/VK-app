@@ -28,7 +28,11 @@ VK.api('friends.get',{order:"hints",fields:"domain"},function(data) {
     document.getElementById("counts").innerHTML=countget;
 
 
-    var friends = responsevk;11
+    var friends = responsevk;
+    bro1=responsevk[0].uid;
+    bro2=responsevk[0].uid;
+    bro3=responsevk[0].uid;
+
     //
     var sel = document.getElementById('FriendsList1');
     var fragment = document.createDocumentFragment();
