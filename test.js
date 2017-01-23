@@ -12,7 +12,7 @@ VK.api('users.get',{},function(data) {
         var responsevk=data.response[0];
         uid=responsevk.id;
         fname=responsevk.first_name;
-        selfname=responsevk.first_name+" "+responsevk.sur_name;
+        selfname=responsevk.first_name+" "+responsevk.last_name;
         document.getElementById("firstname").innerHTML=fname;
 
 });
@@ -33,7 +33,7 @@ VK.api('friends.get',{order:"hints",fields:"domain"},function(data) {
     bro2=responsevk[0].uid;
     bro3=responsevk[0].uid;
 
-    bro1name=responsevk[0].first_name+" "+responsevk[0].sur_name;
+    bro1name=responsevk[0].first_name+" "+responsevk[0].last_name;
 
     bro2name=bro1name;
     bro3name=bro2name;
