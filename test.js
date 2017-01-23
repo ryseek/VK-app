@@ -36,7 +36,7 @@ VK.api('friends.get',{order:"hints",fields:"domain"},function(data) {
     friends.forEach(function(bro, index) {
         var opt = document.createElement('option');
         opt.innerHTML = bro.first_name+" "+bro.last_name;
-        opt.value = bro.first_name+" "+bro.last_name;
+        opt.value = bro.uid.
         fragment.appendChild(opt);
     });
 
@@ -48,7 +48,7 @@ VK.api('friends.get',{order:"hints",fields:"domain"},function(data) {
     friends.forEach(function(bro, index) {
         var opt = document.createElement('option');
         opt.innerHTML = bro.first_name+" "+bro.last_name;
-        opt.value = bro.first_name+" "+bro.last_name;
+        opt.value = bro.uid;
         fragment.appendChild(opt);
     });
 
@@ -60,7 +60,7 @@ VK.api('friends.get',{order:"hints",fields:"domain"},function(data) {
     friends.forEach(function(bro, index) {
         var opt = document.createElement('option');
         opt.innerHTML = bro.first_name+" "+bro.last_name;
-        opt.value = bro.first_name+" "+bro.last_name;
+        opt.value = bro.uid;
         fragment.appendChild(opt);
     });
 
@@ -73,20 +73,21 @@ VK.api('friends.get',{order:"hints",fields:"domain"},function(data) {
 
 
 
-function broCheck() {
-    document.getElementById("demo").innerHTML = "Hello World";
-}
-
 function Bro1(data) {
-    bro1 = data.options[data.selectedIndex].text;
+    bro1 = data.options[data.selectedIndex].value;
     document.getElementById("demo").innerHTML = bro1;
 
 }
 function Bro2(data) {
-    document.getElementById("demo").innerHTML = "Hello World";
-}
+    bro2 = data.options[data.selectedIndex].value;
+    document.getElementById("demo").innerHTML = bro2;}
 function Bro3(data) {
-    document.getElementById("demo").innerHTML = "Hello World";
+    bro3 = data.options[data.selectedIndex].value;
+    document.getElementById("demo").innerHTML = bro3;}
+
+
+
+
+function broCheck() {
+    document.getElementById("demo").innerHTML = bro1;
 }
-
-
