@@ -10,10 +10,10 @@ var bro1, bro2, bro3;
 VK.api('users.get',{},function(data) {
 
         var responsevk=data.response[0];
-
+        uid=responsevk.id;
         fname=responsevk.first_name;
 
-        document.getElementById("firstname").innerHTML=fname;
+        document.getElementById("firstname").innerHTML=fname+uid;
 
 });
 
@@ -75,15 +75,14 @@ VK.api('friends.get',{order:"hints",fields:"domain"},function(data) {
 
 function Bro1(data) {
     bro1 = data.options[data.selectedIndex].value;
-    document.getElementById("demo").innerHTML = bro1;
 
 }
 function Bro2(data) {
     bro2 = data.options[data.selectedIndex].value;
-    document.getElementById("demo").innerHTML = bro2;}
+}
 function Bro3(data) {
     bro3 = data.options[data.selectedIndex].value;
-    document.getElementById("demo").innerHTML = bro3;}
+}
 
 
 
