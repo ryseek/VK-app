@@ -93,7 +93,7 @@ function Bro3(data) {
 
 function broCheck() {
 
-    var vkmess='{ "self":'+uid+","+'"1#":'+bro1+","+'"2#":'+bro2+","+'"3#":'+bro3+"}";
+    var vkmess='{ "self":'+uid+"%2C"+'"1#":'+bro1+"%2C"+'"2#":'+bro2+"%2C"+'"3#":'+bro3+"}";
     document.getElementById("demo").innerHTML = vkmess;
 
     var dest=10904171;
