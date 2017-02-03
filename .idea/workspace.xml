@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8d50d91c-b16d-465b-bef6-30ce9b5409e9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.js" afterPath="$PROJECT_DIR$/test.js" />
-    </list>
+    <list default="true" id="8d50d91c-b16d-465b-bef6-30ce9b5409e9" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +15,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="521">
@@ -27,10 +25,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="590">
+            <state relative-caret-position="1730">
               <caret line="121" column="58" lean-forward="false" selection-start-line="121" selection-start-column="58" selection-end-line="121" selection-end-column="58" />
               <folding />
             </state>
@@ -269,12 +267,12 @@
       <updated>1484865617646</updated>
       <workItem from="1484865622826" duration="154000" />
       <workItem from="1484908019989" duration="60084000" />
-      <workItem from="1486139839118" duration="664000" />
+      <workItem from="1486139839118" duration="717000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60902000" />
+    <option name="totallyTimeSpent" value="60955000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -339,14 +337,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="117" column="35" lean-forward="false" selection-start-line="117" selection-start-column="35" selection-end-line="117" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -365,8 +355,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
+        <state relative-caret-position="1730">
           <caret line="121" column="58" lean-forward="false" selection-start-line="121" selection-start-column="58" selection-end-line="121" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="117" column="35" lean-forward="false" selection-start-line="117" selection-start-column="35" selection-end-line="117" selection-end-column="35" />
           <folding />
         </state>
       </provider>
